@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Credit Scoring</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a class="logo">
+									<span class="title">Laurensius's Portofolio</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#main">Credit Scoring</a></li>
+							<li><a href="#footer">Contacts</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Credit Scoring Project</h1>
+							<span class="image main"><img src="images/credit.jpg" alt="" />
+								<figcaption style="text-align:right">Photo by 
+									<a href="https://www.pexels.com/photo/natwest-atm-card-45111/">
+										Dom J
+									</a>
+								</figcaption>
+							</span>
+							<h2>Background</h2>
+							<p>This project was made for the final round of STC LOGIKA UI 2023 in collaboration with Raden Fadil.
+								Documents involved are written in Indonesia, and this article hopefully can provide context to it. 
+								Please visit my <a href = "#github">github repository</a> to view the code.
+							</p>
+							<h2>Objective</h2>
+							<p>The premise started with Yobank, a (fictional) digital bank that eager to expand their business into credit loan market. 
+								In preparation, they have done a market research that grant loan to several customers and track their payment behaviour. 
+								This information was coupled with each customer's background information such as property ownership, automobile ownership, family member count, 
+								education status, and monthly income. The data were provided in two separate datasets.
+								The objective is to evaluate whether an applicant are likely to default on their loan given their background information. 
+								Such customers are labeled as bad customer, and the rest as good customer.
+							</p>
+							<h2>Method</h2>
+							<p>We started with processing the data to better fit the fitting process.
+								Those involved selecting features, transformation, binning, null values imputation, outlier detection,  labeling, and generating dummy features. 
+								We notice that the data gives was highly imbalaced with the majority of customers belong to the good category. 
+								In the process we need to account for this by making synthetic samples of the minority class.
+							</p>
+							<p>The classification algorithm used are Decision Tree Classifier.
+								This decision comes after comparing several algorithms performace and concluding that Decision Tree was among the highest performance algorithms
+								with especially fast run time. 
+								The main performance metric used was F1 score as a middle ground of avoiding bad customers and reducing opportunity cost from excluding the good ones.
+							</p>
+							<p>The whole operation run on python with the preparation done in pandas and numpy package, with the machine learning done in pycaret. </p>
+							
+							<ul class="actions stacked">
+								<li id="github">
+									<a href="https://github.com/laurensius24/Credit-Scoring" 
+									 target= "_blank" class="button primary fit">
+									 Visit Github Repository
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>Email</h2>
+							<p>laurensius.fabianus@sci.ui.ac.id	</p>
+						</section>
+						<section>
+							<h2>Socials</h2>
+							<ul class="icons">
+								<li><a href="https://github.com/laurensius24"  target= "_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.instagram.com/laurensius243/"  target= "_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/laurensius-steven24/"  target= "_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Product Reviews NLP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a class="logo">
+									<span class="title">Laurensius's Portofolio</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#main">Product Reviews using NLP</a></li>
+							<li><a href="#footer">Contacts</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Product Reviews Project with NLP</h1>
+							<span class="image main"><img src="images/olshop.jpg" alt="" />
+								<figcaption style="text-align:right">Photo by
+									<a href="https://www.pexels.com/photo/working-macbook-computer-keyboard-34577/">
+										Negative Space 
+									</a>
+								</figcaption>
+							</span>
+							<h2>Background</h2>
+							<p>This project was made as final project for Independent Studies program by Kampus Merdeka in collaboration with GreatEdu. 
+								Please visit my <a href = "#github">github repository</a> to view the code.
+							</p>
+							<h2>Objective</h2>
+							<p>The project based on open source data obtained by <a href="kaggle.com/datasets/grikomsn/lazada-indonesian-reviews">Griko Nibras</a> of Lazada Indonesia
+								consumer electronic product sales from 2014 to 2019. 
+								Our objective alongside visualize the data, was to evaluate the effect of words used by sellers in their product name and customers in their reviews on product rating.
+							</p>
+							<h2>Method</h2>
+							<p>The two prominent text features, <code>productName</code> and <code>reviews</code>, were used to generate a topic model that grouped similar worded 
+								products and reviews into one topic. Product name topics provided a way to separate products that belong to same category. 
+								Turns out that there were a lot of products that listed wrong categories, just in hope to increase impression.
+								Both topic models used to feed into classification model, with the goal to identify products that result in high rating.
+							</p>
+							<p>We used Light Gradient Boosting Machine as our primary algorithm considering its fast runtime and decent performance.
+								The model were optimized for Kappa metric, as this results in the model that reduces the false positive rate, in this case the rate that poor rated products 
+								grouped into the high rating.
+							</p>
+							<p>The whole operation run on python with the preparation done in pandas and numpy package, with the machine learning done in pycaret. </p>
+							
+							<ul class="actions stacked">
+								<li id="github">
+									<a href="https://github.com/laurensius24/Lazada-Reviews-Project" 
+									 target= "_blank" class="button primary fit">
+									 Visit Github Repository
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>Email</h2>
+							<p>laurensius.fabianus@sci.ui.ac.id	</p>
+						</section>
+						<section>
+							<h2>Socials</h2>
+							<ul class="icons">
+								<li><a href="https://github.com/laurensius24"  target= "_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.instagram.com/laurensius243/"  target= "_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/laurensius-steven24/"  target= "_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
