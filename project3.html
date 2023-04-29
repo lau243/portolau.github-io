@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Credit Scoring</title>
+		<title>Covid-19 Dashboard in Tableau</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -40,7 +40,7 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#main">Credit Scoring</a></li>
+							<li><a href="#main">Covid-19 Dashboard in Tableau</a></li>
 							<li><a href="#footer">Contacts</a></li>
 						</ul>
 					</nav>
@@ -48,45 +48,39 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Credit Scoring Project</h1>
-							<span class="image main"><img src="images/1.jpg" alt="" />
-								<figcaption style="text-align:right">Photo by 
-									<a href="https://www.pexels.com/photo/natwest-atm-card-45111/">
-										Dom J
+							<h1>Covid-19 Dashboard in Tableau</h1>
+							<span class="image main"><img src="images/3.jpg" alt="" />
+								<figcaption style="text-align:right">Photo by
+									<a href="https://www.pexels.com/photo/face-mask-on-blue-background-3786126/">
+										Anna Shvets 
 									</a>
 								</figcaption>
 							</span>
 							<h2>Background</h2>
-							<p>This project was made for the final round of STC LOGIKA UI 2023 in collaboration with Raden Fadil.
-								Documents involved are written in Indonesia, and this article hopefully can provide context to it. 
-								Please visit my <a href = "#github">github repository</a> to view the code.
+							<p>This project was inspired by an assignment from my Independent Studies. 
+								Please visit my <a href = "#github">tableau public</a> to view the dashboard.
 							</p>
 							<h2>Objective</h2>
-							<p>The premise started with Yobank, a (fictional) digital bank that eager to expand their business into credit loan market. 
-								In preparation, they have done a market research that grant loan to several customers and track their payment behaviour. 
-								This information was coupled with each customer's background information such as property ownership, automobile ownership, family member count, 
-								education status, and monthly income. The data were provided in two separate datasets.
-								The objective is to evaluate whether an applicant are likely to default on their loan given their background information. 
-								Such customers are labeled as bad customer, and the rest as good customer.
+							<p>The project based on open source data obtained by <a href="https://www.kaggle.com/datasets/hendratno/covid19-indonesia">Hendratno</a> 
+								from various official government daily reports of covid-19 cases, recovery, and deaths throughout Indonesia. 
+								The goal is to create a visualization of the data, inpired by <a href="https://covid19.who.int/">WHO covid-19 dashboard</a>.
 							</p>
-							<h2>Method</h2>
-							<p>We started with processing the data to better fit the fitting process.
-								Those involved selecting features, transformation, binning, null values imputation, outlier detection,  labeling, and generating dummy features. 
-								We notice that the data gives was highly imbalaced with the majority of customers belong to the good category. 
-								In the process we need to account for this by making synthetic samples of the minority class.
+							<h2>Result</h2>
+							<p>The dashboard consists of 
+								<ul>
+									<li>Map chart to visualize the cases severity in certain provinces with its ordering,</li>
+									<li>Numerical summary of cases, recovery, and deaths,</li>
+									<li>Daily cases record with its moving average, and</li>
+									<li>Cases break down by island,</li>
+								</ul>
+								alongside the plots and numbers, the dashboard is equipped with filters for
+								dates, provinces, and islands.
 							</p>
-							<p>The classification algorithm used are Decision Tree Classifier.
-								This decision comes after comparing several algorithms performace and concluding that Decision Tree was among the highest performance algorithms
-								with especially fast run time. 
-								The main performance metric used was F1 score as a middle ground of avoiding bad customers and reducing opportunity cost from excluding the good ones.
-							</p>
-							<p>The whole operation run on python with the preparation done in pandas and numpy package, with the machine learning done in pycaret. </p>
-							
 							<ul class="actions stacked">
 								<li id="github">
-									<a href="https://github.com/laurensius24/Credit-Scoring" 
+									<a href="https://public.tableau.com/views/Portofolio_CovidDashboard/CovidDashboard-Indonesia?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" 
 									 target= "_blank" class="button primary fit">
-									 Visit Github Repository
+									 Visit Tableau Public
 									</a>
 								</li>
 							</ul>

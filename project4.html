@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Credit Scoring</title>
+		<title>Sales Dashboard in Excel</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -40,7 +40,7 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#main">Credit Scoring</a></li>
+							<li><a href="#main">Sales Dashboard in Excel</a></li>
 							<li><a href="#footer">Contacts</a></li>
 						</ul>
 					</nav>
@@ -48,43 +48,44 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Credit Scoring Project</h1>
-							<span class="image main"><img src="images/1.jpg" alt="" />
-								<figcaption style="text-align:right">Photo by 
-									<a href="https://www.pexels.com/photo/natwest-atm-card-45111/">
-										Dom J
+							<h1>Sales Dashboard in Excel</h1>
+							<span class="image main"><img src="images/4.jpg" alt="" />
+								<figcaption style="text-align:right">Photo by
+									<a href="https://www.pexels.com/photo/bicycle-hanged-and-piled-on-bicycle-shop-132695/">
+										Alexander Dummer 
 									</a>
 								</figcaption>
 							</span>
 							<h2>Background</h2>
-							<p>This project was made for the final round of STC LOGIKA UI 2023 in collaboration with Raden Fadil.
-								Documents involved are written in Indonesia, and this article hopefully can provide context to it. 
-								Please visit my <a href = "#github">github repository</a> to view the code.
+							<p>This project is mainly made for this portofolio, to demonstrate my Excel skills that have been accumulated
+								thoughout various courses and projects. This particular dashboard inspired by two youtube sources,
+								with the structure referencing <a href="https://www.youtube.com/watch?v=opJgMj1IUrc">AlexTheAnalyst</a> along with the dataset,
+								and the visual referencing <a href="https://www.youtube.com/watch?v=jeYjtEX3RAE&t=815s">Kenji Explains</a>.
+								Please visit my <a href = "#github">github repository</a> to view the dashboard and its inner workings.
 							</p>
 							<h2>Objective</h2>
-							<p>The premise started with Yobank, a (fictional) digital bank that eager to expand their business into credit loan market. 
-								In preparation, they have done a market research that grant loan to several customers and track their payment behaviour. 
-								This information was coupled with each customer's background information such as property ownership, automobile ownership, family member count, 
-								education status, and monthly income. The data were provided in two separate datasets.
-								The objective is to evaluate whether an applicant are likely to default on their loan given their background information. 
-								Such customers are labeled as bad customer, and the rest as good customer.
+							<p>The project based on open source data obtained from the source mentioned above.
+								It contains various customer's background with their bike purchase decision, being purchasing or not purchasing.
+								The goal is to create visulization of the data to identify certain customer traits that results in higher purchase likelihood.
 							</p>
-							<h2>Method</h2>
-							<p>We started with processing the data to better fit the fitting process.
-								Those involved selecting features, transformation, binning, null values imputation, outlier detection,  labeling, and generating dummy features. 
-								We notice that the data gives was highly imbalaced with the majority of customers belong to the good category. 
-								In the process we need to account for this by making synthetic samples of the minority class.
+							<h2>Method and Result</h2>
+							<p>The data is cleaned and molded to suit our visualization goal, using power query techniques. 
+								This approach is significantly easier and resilient in comparison to usual formula or macro approach.
+								Then we pull certain information that will form our charts using pivot tables. 
 							</p>
-							<p>The classification algorithm used are Decision Tree Classifier.
-								This decision comes after comparing several algorithms performace and concluding that Decision Tree was among the highest performance algorithms
-								with especially fast run time. 
-								The main performance metric used was F1 score as a middle ground of avoiding bad customers and reducing opportunity cost from excluding the good ones.
+							<p>The resulting dashboard consists of
+								<ul>
+									<li>Total purchase rate,</li>
+									<li>Purchase rate by region,</li>
+									<li>Purchase rate by age bracket,</li>
+									<li>Purchase rate by commute distance, and</li>
+									<li>Average income by gender and purchase decision,</li>
+								</ul>
+								alongside filters for matiral status, home ownership, car ownership, and occupations.
 							</p>
-							<p>The whole operation run on python with the preparation done in pandas and numpy package, with the machine learning done in pycaret. </p>
-							
 							<ul class="actions stacked">
 								<li id="github">
-									<a href="https://github.com/laurensius24/Credit-Scoring" 
+									<a href="https://github.com/laurensius24/Excel-Dashboard" 
 									 target= "_blank" class="button primary fit">
 									 Visit Github Repository
 									</a>

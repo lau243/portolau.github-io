@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Credit Scoring</title>
+		<title>Hexa Town Game</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -40,7 +40,7 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#main">Credit Scoring</a></li>
+							<li><a href="#main">Hexa Town Game</a></li>
 							<li><a href="#footer">Contacts</a></li>
 						</ul>
 					</nav>
@@ -48,43 +48,39 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Credit Scoring Project</h1>
-							<span class="image main"><img src="images/1.jpg" alt="" />
-								<figcaption style="text-align:right">Photo by 
-									<a href="https://www.pexels.com/photo/natwest-atm-card-45111/">
-										Dom J
+							<h1>Hexa Town Game</h1>
+							<span class="image main"><img src="images/5.jpg" alt="" />
+								<figcaption style="text-align:right">Photo by
+									<a href="https://www.pexels.com/photo/blur-board-game-business-challenge-278918/">
+										Pixabay 
 									</a>
 								</figcaption>
 							</span>
 							<h2>Background</h2>
-							<p>This project was made for the final round of STC LOGIKA UI 2023 in collaboration with Raden Fadil.
-								Documents involved are written in Indonesia, and this article hopefully can provide context to it. 
+							<p>This project was made as a board game played in final round of MTC LOGIKA UI 2022 in collaboration with LOGIKA's academic team
+								especially Elbert Krison, the mastermind behind the game mechanics.
+								Unlike my other projects, this is not a data related project, but mainly is a programming project in base python.
 								Please visit my <a href = "#github">github repository</a> to view the code.
 							</p>
 							<h2>Objective</h2>
-							<p>The premise started with Yobank, a (fictional) digital bank that eager to expand their business into credit loan market. 
-								In preparation, they have done a market research that grant loan to several customers and track their payment behaviour. 
-								This information was coupled with each customer's background information such as property ownership, automobile ownership, family member count, 
-								education status, and monthly income. The data were provided in two separate datasets.
-								The objective is to evaluate whether an applicant are likely to default on their loan given their background information. 
-								Such customers are labeled as bad customer, and the rest as good customer.
+							<p>The project is to create a board game for five teams that will compete in MTC. The game consists of math problem solving part as well
+								as board game thinking. This will pressure the teams to not only be good at math problems, but also strategize in order to take advantage
+								of the board mechanics.
+							</p>
+							<p>The players goal is to collect coins from solving problems and visiting the board tiles.
+								The game consists of a hexagonal board with 7 tiles, each with their unique services that the teams can use while inside.
+								There are also items that can alter the game flow and disadvatege other team. 
+								This game will be run for 14 rounds simulating 2 weeks journey, and the team with highest coins will win the competition. 
 							</p>
 							<h2>Method</h2>
-							<p>We started with processing the data to better fit the fitting process.
-								Those involved selecting features, transformation, binning, null values imputation, outlier detection,  labeling, and generating dummy features. 
-								We notice that the data gives was highly imbalaced with the majority of customers belong to the good category. 
-								In the process we need to account for this by making synthetic samples of the minority class.
+							<p>The following will reference the v2, created after the actual competition.
+								The programming based on modular programming philosophy, being every action that is happening is coded in a separate function
+								that is called in the main program. There is a touch of object programming used for creating team player using python's class.
+								This version is also improved with error handling to catch unintended user input.
 							</p>
-							<p>The classification algorithm used are Decision Tree Classifier.
-								This decision comes after comparing several algorithms performace and concluding that Decision Tree was among the highest performance algorithms
-								with especially fast run time. 
-								The main performance metric used was F1 score as a middle ground of avoiding bad customers and reducing opportunity cost from excluding the good ones.
-							</p>
-							<p>The whole operation run on python with the preparation done in pandas and numpy package, with the machine learning done in pycaret. </p>
-							
 							<ul class="actions stacked">
 								<li id="github">
-									<a href="https://github.com/laurensius24/Credit-Scoring" 
+									<a href="https://github.com/laurensius24/Hexa-Town" 
 									 target= "_blank" class="button primary fit">
 									 Visit Github Repository
 									</a>
