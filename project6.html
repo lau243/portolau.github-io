@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Stats Course Lab in R</title>
+		<title>Data Cleaning in SQL</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@
 
 							<!-- Logo -->
 								<a class="logo">
-									<span class="title">Laurensius's Portofolio</span>
+									<span class="title">Laurensius's Portfolio</span>
 								</a>
 
 							<!-- Nav -->
@@ -40,7 +40,7 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#main">Stats Course Lab in R</a></li>
+							<li><a href="#main">Data Cleaning in SQL</a></li>
 							<li><a href="#footer">Contacts</a></li>
 						</ul>
 					</nav>
@@ -48,44 +48,33 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Stats Course Lab in R</h1>
+							<h1>Data Cleaning in SQL</h1>
 							<span class="image main"><img src="images/6.jpg" alt="" />
-								<figcaption style="text-align:right">Photo by
-									<a href="https://www.pexels.com/photo/document-on-top-of-stationery-669619/">
+								<figcaption style="text-align:right">Photo by 
+									<a href="https://www.pexels.com/photo/close-up-photo-of-gray-laptop-577210/">
 										Lukas
 									</a>
 								</figcaption>
 							</span>
 							<h2>Background</h2>
-							<p>This is a compilation of statistics courses lab that i've done in uni using R software. 
-								Courses mentioned are Linear Models and Survival Analysis.  
+							<p>This project is mainly made for this portfolio, to demonstrate understanding of SQL language using MySQL.
+								This particular dashboard inspired by youtube sources from <a href="https://www.youtube.com/watch?v=8rO7ztF4NtU&pp=ygUaYWxleCB0aGUgYW5hbHlzdCBwb3J0Zm9saW8%3D">AlexTheAnalyst</a> 
+								with some spin on my own. 
+								Please visit my <a href = "#github">github repository</a> to view the code.
 							</p>
-							<h2>Linear Models</h2>
-							<p>The course is about linear regression method along with its assumptions, implication, and measure of performance.
-								This project is a final assignment to said course as a team. 
-								Our choice being a dataset of countries with its characteristics, especially its life expectancy. 
-								The model goal is to use the other field to predict a hypothetical countries life expectancy. 
-								Please visit my github repository linked below to view the code.
+							<h2>Objective</h2>
+							<p>The project based on open source Covid-19 data obtained from <a href="https://ourworldindata.org/covid-cases">Our World in Data</a>. 
+								The data contains daily cases, deaths, and vaccination numbers accross 200+ countries and the relevant statistics to draw correlation from.
+								The goal is to write query in preparation for visualization, aspiring from <a href="https://covid19.who.int/">WHO's Covid-19 Dashboard</a>.
 							</p>
-							<ul class="actions stacked">
-								<li id="github">
-									<a href="https://github.com/laurensius24/Linear-Models-Project" 
-									 target= "_blank" class="button primary fit">
-									 Visit Github Repository
-									</a>
-								</li>
-							</ul>
-
-							<h2>Survival Analysis</h2>
-							<p>The course is about statistical analysis of survival data. 
-								The usual context for survival data is time of death of patients after a certain treatment.
-								Using parametric or nonparametric approach, we can estimate the cumulative risk of death and survival rate of patients based on certain traits or behaviour.
-								R provides a survival library to easily process survival data and make estimates to said measures.
-								Please visit my github repository linked below to view the code.
+							<h2>Method and Result</h2>
+							<p>The data is reduced by dropping some redundant columns via Excel to reduce the loading burden.
+								After the table are loaded locally, the table are normalized and columns changed to their appropriate typing.
+								Then the relevant information are extracted with the aid of CTE, and views.
 							</p>
 							<ul class="actions stacked">
 								<li id="github">
-									<a href="https://github.com/laurensius24/Survival-Analysis-Project" 
+									<a href="https://github.com/laurensius24/SQL-Data-Cleaning-Project" 
 									 target= "_blank" class="button primary fit">
 									 Visit Github Repository
 									</a>
